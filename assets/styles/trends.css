@@ -1,0 +1,141 @@
+
+
+.trends-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trends-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  margin: 30px 0 60px 0;
+  padding-left: 30px;
+  font-weight: 500;
+  font-size: 0.758rem;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border-top-left-radius: 1px;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.272);
+  border-left: 1px solid rgba(0, 0, 0, 0.272);
+  transition: box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.trends-section h2:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 1px;
+}
+
+.trendy-products {
+  width: 100%;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card {
+  background-color: aliceblue;
+  display: flex;
+  padding: 20px 30px;
+  flex-direction: column;
+  border: 1px solid rgba(228, 221, 221, 0.689);
+  cursor: pointer;
+  transition: transform 0.50s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card .infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.product-details .price {
+  font-weight: 300;
+}
+
+.product-details i {
+  cursor: pointer;
+  transform: transform 0.1s;
+  font-size: 1.2rem;
+}
+
+.product-details i:hover {
+  transform: scale(1.1);
+}
+
+.trends-section .see-more-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin: 70px auto 30px auto;
+  border-radius: 4px;
+  letter-spacing: 0.4rem;
+  transition: transform 0.2s;
+}
+
+.trends-section .see-more-btn:hover {
+  transform: scaleX(1.1);
+}
+
+
+@media all and (max-width: 1180px) {
+  .trendy-products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-card:nth-last-child(-n+1) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 930px) {
+  .trendy-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card:nth-last-child(-n+2) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .trendy-products {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+  }
+  .product-card {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .product-card:nth-last-child(-n+1) {
+    display: block;
+  }
+  
+  .trends-section h2 {
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+
+}

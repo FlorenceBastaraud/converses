@@ -5,10 +5,26 @@
   caret-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
 body {
   box-sizing: border-box;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
+main {
+  width: 90vw;
+  margin: 100px auto;
+}
+
+main section {
+  padding-top: 100px;
+}
