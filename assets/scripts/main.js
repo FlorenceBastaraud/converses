@@ -1,7 +1,8 @@
+const hamburgerMenu = document.querySelector('.header-hamburger-menu-icon');
+const body = document.querySelector('body');
 const logo = document.querySelector('.header-logo');
 const menu = document.querySelector('.header-menu');
 const search = document.querySelector('.header-search-icon');
-const hamburgerMenu = document.querySelector('.header-hamburger-menu-icon');
 const title = document.querySelector('.header-title');
 const btn = document.querySelector('.header-btn-link');
 const socials = document.querySelector('.header-social-media');
@@ -11,29 +12,23 @@ const lineThree = document.querySelector('.line-three');
 const bgImage = document.querySelector('.header-background-image');
 
 
+
+hamburgerMenu.addEventListener('click', () => {
+  body.classList.toggle('responsive-menu');
+})
+
+
+
 TweenMax.from(logo, 1, {
   opacity: 0,
   x: 10,
   ease: Expo.easeInOut
 });
 
-TweenMax.from(menu, 2, {
-  opacity: 0,
-  x: 10,
-  ease: Expo.easeInOut
-}, 0.2);
+setTimeout(() => {
+  menu.style.opacity = 1;
+}, 3000)
 
-TweenMax.from(search, 1, {
-  opacity: 0,
-  y: 10,
-  ease: Expo.easeInOut
-}, 0.2);
-
-TweenMax.from(hamburgerMenu, 1, {
-  opacity: 0,
-  y: 10,
-  ease: Expo.easeInOut
-}, 0.2);
 
 TweenMax.from(title, 1, {
   opacity: 0,
