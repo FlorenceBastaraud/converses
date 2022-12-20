@@ -10,6 +10,7 @@ const lineOne = document.querySelector('.line-one');
 const lineTwo = document.querySelector('.line-two');
 const lineThree = document.querySelector('.line-three');
 const bgImage = document.querySelector('.header-background-image');
+const backTop = document.querySelector('.back-top');
 
 
 
@@ -18,7 +19,7 @@ hamburgerMenu.addEventListener('click', () => {
 })
 
 
-
+// header animation
 TweenMax.from(logo, 1, {
   opacity: 0,
   x: 10,
@@ -75,3 +76,19 @@ TweenMax.from(bgImage, 2, {
   y: -800,
   ease: Expo.easeInOut
 });
+
+
+
+const backToTop = () => {
+  (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? backTop.style.display = "block" : backTop.style.display = "none";
+}
+
+window.onscroll = function(){
+  backToTop();
+}
+
+
+backTop.addEventListener('click', () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})

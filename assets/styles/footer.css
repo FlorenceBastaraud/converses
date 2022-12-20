@@ -1,0 +1,139 @@
+footer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.footer-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(100, 96, 96);
+  padding: 50px 40px 50px 15.625rem;
+}
+
+.footer-menu {
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+}
+
+.footer-menu ul li {
+  border-bottom: 1px groove #222;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer-menu ul li:hover {
+  background-color: #e5dcdc;
+  border-bottom: 1px groove #fff;
+}
+
+.footer-menu ul li:hover a {
+  color: #000;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  line-height: 4;
+  padding: 40px;
+}
+
+.footer-info {
+  flex: 1;
+  padding: 40px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info img {
+  width: 10rem;
+  border-radius: 4px;
+}
+
+
+.footer-info span {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1rem;
+}
+
+.footer-info span:hover {
+  color: #e5dcdc;
+}
+
+
+.footer-social-media ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-social-media ul a{
+  color: #000;
+}
+
+.footer-social-media ul a:hover{
+  color: #e5dcdc;
+}
+
+.footer-social-media ul li {
+  font-size: 1.4rem;
+  transition: .2s;
+  padding: 2px 10px;
+}
+
+.footer-social-media ul li:hover {
+  transform: scale(1.7);
+}
+
+
+
+
+.footer-legal-info {
+  text-align: center;
+  background-color: #000;
+  padding: 20px ;
+}
+
+.footer-legal-info a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+.footer-legal-info a:hover {
+  color: #e5dcdc;
+}
+
+
+@media all and (max-width: 1150px) {
+  .footer-main {
+    flex-direction: column;
+    padding: 50px 40px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  footer {
+    font-size: 90%;
+  }
+}

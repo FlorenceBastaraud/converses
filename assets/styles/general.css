@@ -28,3 +28,27 @@ main {
 main section {
   padding-top: 100px;
 }
+
+
+.back-top {
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  background-color: rgb(169, 177, 184);
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.back-top:hover {
+  background-color: #fff;
+  transform: scale(110%);
+}
+
+
+@media all and (max-width: 900px) {
+  .back-top {
+    display: none !important;
+  }
+}
