@@ -188,7 +188,7 @@ header .header-btn-link button:hover {
 }
 
 
-@media (max-width: 1050px) { 
+@media all and (max-width: 1050px) { 
   
   
   header {
@@ -316,7 +316,7 @@ header .header-btn-link button:hover {
 
 
 
-@media (max-width: 610px) { 
+@media all and (max-width: 610px) { 
 
   .header-background-lines .line-one {
     width: 50px;
@@ -372,7 +372,7 @@ header .header-btn-link button:hover {
 
 
 
-@media (max-width: 500px) { 
+@media all and (max-width: 500px) { 
   
 
   .header-background-lines .line-one {
@@ -428,7 +428,7 @@ header .header-btn-link button:hover {
 }
 
 
-@media (max-width: 380px) { 
+@media all and (max-width: 380px) { 
  
   nav .header-logo {
     font-weight: 700;
@@ -496,7 +496,7 @@ header .header-btn-link button:hover {
 
 
 
-@media (max-width: 310px) { 
+@media all and (max-width: 310px) { 
     
   nav .header-menu a {
     font-size: 3rem;
