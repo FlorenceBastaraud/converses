@@ -37,7 +37,6 @@
 }
 
 .product-card {
-  background-color: aliceblue;
   display: flex;
   padding: 20px 30px;
   flex-direction: column;
