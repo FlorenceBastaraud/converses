@@ -1,3 +1,14 @@
+.animate-section-settings {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.animate-section-settings.show-section {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 .trends-section {

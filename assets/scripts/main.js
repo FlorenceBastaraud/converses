@@ -11,9 +11,10 @@ const lineTwo = document.querySelector('.line-two');
 const lineThree = document.querySelector('.line-three');
 const bgImage = document.querySelector('.header-background-image');
 const backTop = document.querySelector('.back-top');
+const trendsSection = document.querySelector('.animate-section-settings');
 
 
-
+// hamburger menu
 hamburgerMenu.addEventListener('click', () => {
   body.classList.toggle('responsive-menu');
 })
@@ -28,7 +29,8 @@ TweenMax.from(logo, 1, {
 
 setTimeout(() => {
   menu.style.opacity = 1;
-}, 3000)
+  menu.style.transform = "translateY(0)";
+}, 2000)
 
 
 TweenMax.from(title, 1, {
@@ -79,6 +81,27 @@ TweenMax.from(bgImage, 2, {
 
 
 
+
+// animation trends section
+const show = () => {
+  const windowHeight = window.innerHeight;
+  const sectionTop = trendsSection.getBoundingClientRect().top;
+  const sectionShowAt = windowHeight + 150;
+
+  if(sectionTop > (windowHeight - sectionShowAt)){
+    trendsSection.classList.add('show-section');
+  } 
+}
+
+
+window.addEventListener('scroll', () => {
+  show();
+});
+
+
+
+
+// back top button
 const backToTop = () => {
   (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? backTop.style.display = "block" : backTop.style.display = "none";
 }
@@ -87,8 +110,13 @@ window.onscroll = function(){
   backToTop();
 }
 
+setTimeout(() => {
+  backTop.style.opacity = 1;
+}, 8000);
+
 
 backTop.addEventListener('click', () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 })
+

@@ -43,6 +43,8 @@ nav .header-menu {
   display: flex;
   justify-content:end;
   opacity: 0;
+  transform: translateY(-150px);
+  transition: 1s all ease;
 }
 
 nav .header-menu a {

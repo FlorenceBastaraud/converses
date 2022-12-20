@@ -1,6 +1,6 @@
 # A landing page with the theme of converses sneakers
 
-#### Css / Html / Javascript
+### Css / Html / Javascript
 
 ##### Animated header
 ##### Responsive Design
@@ -8,3 +8,5 @@
 ##### & more !
 
 UI and Web design by me 
+
+[view site / voir site](https://florencebastaraud.github.io/converses-landing-page/)
