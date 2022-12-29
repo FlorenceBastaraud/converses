@@ -103,6 +103,10 @@
   transition: transform 0.2s;
 }
 
+.trends-section .see-more-btn a {
+  all: unset;
+}
+
 .trends-section .see-more-btn:hover {
   transform: scaleX(1.1);
 }
