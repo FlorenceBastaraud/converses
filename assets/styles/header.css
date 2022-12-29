@@ -42,7 +42,7 @@ nav .header-menu {
   flex: 1;
   display: flex;
   justify-content:end;
-  transform: translateY(-150px);
+  opacity: 0;
   transition: 1s all ease;
 }
 
@@ -232,6 +232,7 @@ header .header-btn-link button:hover {
 
   nav .header-menu {
     position: absolute;
+    opacity: 1;
     top: 0;
     left: 0;
     width: 100%;
