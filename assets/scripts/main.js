@@ -34,7 +34,6 @@ setTimeout(() => {
 
 
 TweenMax.from(title, 1, {
-  opacity: 0,
   delay: 0.1,
   y: 10,
   ease: Expo.easeInOut
